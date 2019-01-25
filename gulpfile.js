@@ -14,7 +14,7 @@ gulp.task('pug', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('sass', () => {
@@ -26,7 +26,7 @@ gulp.task('sass', () => {
       outputStyle: 'expanded'
     }))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./docs/css/'))
 });
 
 gulp.task('bs-reload', (done) => {
@@ -37,12 +37,13 @@ gulp.task('bs-reload', (done) => {
 gulp.task('browser-sync', () => {
   browserSync.init ({
     server: {
-      baseDir: './dist/',
+      baseDir: './docs/',
     }
   });
-  gulp.watch('./dist/**/*.html', gulp.task('bs-reload'));
-  gulp.watch('./dist/css/**/*.css', gulp.task('bs-reload'));
-  gulp.watch('./dist/js/**/*.js', gulp.task('bs-reload'));
+  gulp.watch('./docs/**/*.html', gulp.task('bs-reload'));
+  gulp.watch('./docs/css/**/*.css', gulp.task('bs-reload'));
+  gulp.watch('./docs/js/**/*.js', gulp.task('bs-reload'));
+  gulp.watch('./docs/img/', gulp.task('bs-reload'));
 });
 
 gulp.task('watch', () => {
