@@ -6,8 +6,13 @@ body
   font-style: normal
   text-align: center
 
-.op
+.img-opacity
   opacity: 1 !important
+  transform: scale(1.1) !important
+
+.text-opacity
+  color: #fff
+  opacity: 0.4
 
 .container
   height: 100vh
@@ -28,15 +33,16 @@ body
 
       &:hover
         background: #fff
+        opacity: 0.8
 
       &:not(last-child)
         margin-bottom: 40px
 
       p
-
       font-size: 30px
       transition: all 0.5s
       letter-spacing: 2px
+      opacity: 1
 
   &__img01
     position: absolute
@@ -45,7 +51,8 @@ body
     background-repeat: no-repeat
     background-size: 100vh
     opacity: 0
-    transition: all 0.5s
+    transform: scale(1.2)
+    transition: all .5s ease-in-out
     height: 100%
     width: 100%
     top: 0
@@ -60,7 +67,8 @@ body
     background-repeat: no-repeat
     background-size: 100vh
     opacity: 0
-    transition: all 0.5s
+    transform: scale(1.2)
+    transition: all .5s ease-in-out
     height: 100%
     width: 100%
     top: 0
@@ -74,7 +82,8 @@ body
     background-repeat: no-repeat
     background-size: 100vh
     opacity: 0
-    transition: all 0.5s
+    transform: scale(1.2)
+    transition: all .5s ease-in-out
     height: 100%
     width: 100%
     top: 0

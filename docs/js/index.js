@@ -8,25 +8,25 @@ const p3 = document.getElementById('p3');
 const container = document.getElementById('container')
 
 t1.addEventListener('mouseenter', () => {
-  p1.classList.add("op")
+  p1.classList.add("img-opacity")
 }, false);
 
 t1.addEventListener('mouseleave', () => {
-  p1.classList.remove("op")
+  p1.classList.remove("img-opacity")
 }, false);
 
 t2.addEventListener('mouseenter', () => {
-  p2.classList.add("op")
+  p2.classList.add("img-opacity")
 }, false);
 
 t2.addEventListener('mouseleave', () => {
-  p2.classList.remove("op")
+  p2.classList.remove("img-opacity")
 }, false);
 
 t3.addEventListener('mouseenter', () => {
-  p3.classList.add("op")
+  p3.classList.add("img-opacity")
 }, false);
 
 t3.addEventListener('mouseleave', () => {
-  p3.classList.remove("op")
+  p3.classList.remove("img-opacity")
 }, false);
