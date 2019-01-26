@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: yu-mincho-5go-kana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.container__inner {
+  height: 100%;
+  width: 100%;
+}
+
+.container__inner--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.container__inner--item .container--text01 {
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.5s;
+  font-size: 30px;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.container__inner--item .container--text01:not(last-child) {
+  margin-bottom: 40px;
+}
+
+.container__inner--item .container--text01:hover {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.container__inner--item .container--text01:hover + .container--img01 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container__inner--item .container--img01 {
+  position: fixed;
+  background-image: url("../img/photo01.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .5s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container__inner--item .container--text02 {
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.5s;
+  font-size: 30px;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.container__inner--item .container--text02:not(last-child) {
+  margin-bottom: 40px;
+}
+
+.container__inner--item .container--text02:hover {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.container__inner--item .container--text02:hover + .container--img02 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container__inner--item .container--img02 {
+  position: fixed;
+  background-image: url("../img/photo02.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .5s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container__inner--item .container--text03 {
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.5s;
+  font-size: 30px;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.container__inner--item .container--text03:not(last-child) {
+  margin-bottom: 40px;
+}
+
+.container__inner--item .container--text03:hover {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.container__inner--item .container--text03:hover + .container--img03 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container__inner--item .container--img03 {
+  position: fixed;
+  background-image: url("../img/photo03.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .5s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
