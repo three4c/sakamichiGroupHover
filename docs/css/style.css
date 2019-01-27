@@ -93,7 +93,7 @@ body {
   color: #fff;
 }
 
-.container__text--item:not(last-child) {
+.container__text--item:not(:last-child) {
   margin-bottom: 40px;
 }
 
