@@ -84,7 +84,6 @@ body {
   margin-bottom: 40px;
   font-size: 30px;
   letter-spacing: 2px;
-  opacity: 1;
 }
 
 .container__inner > *:nth-child(odd):hover {
@@ -119,9 +118,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100vh;
   opacity: 0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -130,14 +126,6 @@ body {
   width: 100%;
 }
 
-.container__inner--img01 {
-  background-image: url("../img/photo01.jpg");
-}
-
-.container__inner--img02 {
-  background-image: url("../img/photo02.jpg");
-}
-
-.container__inner--img03 {
-  background-image: url("../img/photo03.jpg");
+.container__inner > *:nth-child(even) img {
+  height: 100vh;
 }

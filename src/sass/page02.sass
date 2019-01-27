@@ -1,4 +1,5 @@
 @import ../../node_modules/reset-css/reset
+@import 'mixin/mixin'
 
 body
   font-family: yu-mincho-5go-kana, sans-serif
@@ -6,65 +7,31 @@ body
   text-align: center
 
 .container
-  height: 100vh
-  width: 100vw
-  position: relative
+  @include container
 
   &__text
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    height: 100%
-    width: 100%
+    @include flexCenter
 
     &--item
-      cursor: pointer
-      padding: 20px
-      transition: all 0.5s
+      @include textArea
 
       &:hover
-        background: #fff
-        opacity: 0.8
+        @include hoverText
 
       &:not(:last-child)
         margin-bottom: 40px
 
       p
-
-      font-size: 30px
-      transition: all 0.5s
-      letter-spacing: 2px
-      opacity: 1
+      @include textSet
 
   &__img
-    position: fixed
-    background-position: top center
-    background-repeat: no-repeat
-    background-size: 100vh
-    height: 100%
-    width: 100%
-    top: 0
-    left: 0
-    z-index: -1
 
-.p1
-  background-image: url('../img/photo01.jpg')
+    &--item
+      @include imgArea
 
-.p2
-  background-image: url('../img/photo02.jpg')
-
-.p3
-  background-image: url('../img/photo03.jpg')
+      img
+        height: 100vh
 
 .on
-  animation-name: fadeIn
-  animation-duration: .5s
-
-@keyframes fadeIn
-  0%
-    opacity: 0
-    transform: scale(1.2)
-  100%
-    opacity: 1
-    transform: scale(1.0)
+  opacity: 1 !important
+  transform: scale(1.0) !important
