@@ -1,4 +1,4 @@
-@import ../../node_modules/reset-css/reset
+@import '../../node_modules/reset-css/reset'
 @import 'mixin/mixin'
 
 body
@@ -13,21 +13,21 @@ body
   &__text
     @include flexCenter
 
-    &--item
-      border: solid 5px #000
-      @include textArea
+  &__item
+    border: solid 5px #000
+    @include textArea
 
-      &:hover
-        background: #000
+    &:hover
+      background: #000
 
-        & a
-          color: #fff
+      & a
+        color: #fff
 
-      &:not(:last-child)
-        margin-bottom: 40px
+    &:not(:last-child)
+      margin-bottom: 40px
 
-      a
-        @include textSet
-        color: #000
-        text-decoration: none
-        transition: all .6s ease-in-out
+    a
+      @include textSet
+      color: #000
+      text-decoration: none
+      transition: all .6s ease-in-out

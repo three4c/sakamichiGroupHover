@@ -73,51 +73,47 @@ body {
 }
 
 .container__inner {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
-.container__inner > *:nth-child(odd) {
+.container__yurinaHirate, .container__nanaseNishino, .container__marikaIto {
   cursor: pointer;
   padding: 20px;
+  -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  margin-bottom: 40px;
-  font-size: 30px;
-  letter-spacing: 2px;
 }
 
-.container__inner > *:nth-child(odd):hover {
+.container__yurinaHirate:hover, .container__nanaseNishino:hover, .container__marikaIto:hover {
   background: #fff;
   opacity: 0.8;
 }
 
-.container__inner--text01:hover + .container__inner--img01 {
+.container__yurinaHirate p, .container__nanaseNishino p, .container__marikaIto p {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.container__yurinaHirate:hover + .container__target, .container__nanaseNishino:hover + .container__target, .container__marikaIto:hover + .container__target {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.container__inner--text02:hover + .container__inner--img02 {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.container__yurinaHirate, .container__nanaseNishino {
+  margin-bottom: 40px;
 }
 
-.container__inner--text03 {
-  margin-bottom: 0 !important;
-}
-
-.container__inner--text03:hover + .container__inner--img03 {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.container__inner > *:nth-child(even) {
+.container__target {
   position: fixed;
   top: 0;
   left: 0;
@@ -125,11 +121,12 @@ body {
   opacity: 0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
   height: 100%;
   width: 100%;
 }
 
-.container__inner > *:nth-child(even) img {
+.container__target img {
   height: 100vh;
 }

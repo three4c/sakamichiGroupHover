@@ -1,4 +1,4 @@
-@import ../../node_modules/reset-css/reset
+@import '../../node_modules/reset-css/reset'
 @import 'mixin/mixin'
 
 body
@@ -13,25 +13,23 @@ body
   &__text
     @include flexCenter
 
-    &--item
-      @include textArea
+  &__textitem
+    @include textArea
 
-      &:hover
-        @include hoverText
+    &:hover
+      @include hoverText
 
-      &:not(:last-child)
-        margin-bottom: 40px
+    &:not(:last-child)
+      margin-bottom: 40px
 
-      p
+    p
       @include textSet
 
-  &__img
+  &__imgitem
+    @include imgArea
 
-    &--item
-      @include imgArea
-
-      img
-        height: 100vh
+    img
+      height: 100vh
 
 .on
   opacity: 1 !important
