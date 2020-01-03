@@ -1,5 +1,5 @@
 # gulp-test
-Github Pages :  [https://three4c.github.io/gulp-test/.](https://three4c.github.io/gulp-test/)
+Github Pages :  [https://three4c.github.io/sakamichiGroupHover/.](https://three4c.github.io/sakamichiGroupHover/)
 
 ## Build Setup
 ### install dependencies
